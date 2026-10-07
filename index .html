@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#15132a">
+<meta name="description" content="روان کتاب؛ کتابخانه‌ای برای روانشناسی، پزشکی ورزشی و محتوای علمی">
+<title>روان کتاب | کتابخانه دانش</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#17152b;--mut:#706b83;--line:#e9e5f2;--bg:#f8f7fc;--pri:#6847f5;--card:#fff;--shadow:0 18px 50px rgba(28,20,62,.09);--radius:22px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Vazirmatn,Tahoma,sans-serif;color:var(--ink);background:var(--bg);line-height:1.85}
+button,input{font:inherit}a{color:inherit}.container{width:min(1160px,calc(100% - 32px));margin:auto}
+.topline{height:5px;background:linear-gradient(90deg,#ff5c8a,#ffb84d,#55d98b,#51a7ff,#8d63ff)}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.82);backdrop-filter:blur(18px);border-bottom:1px solid rgba(233,229,242,.9)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{text-decoration:none;display:flex;align-items:center;gap:11px;font-weight:900;font-size:1.3rem}.brandmark{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,var(--pri),#9c7bff);box-shadow:0 10px 22px #6847f538}.brandmark svg{width:23px}.navlinks{display:flex;align-items:center;gap:24px}.navlinks a{text-decoration:none;color:#4a465d;font-size:.92rem;font-weight:600}.navlinks a:hover{color:var(--pri)}.nav-cta{padding:9px 17px;border-radius:12px;background:var(--ink)!important;color:#fff!important}.menu{display:none;border:0;background:#fff;border:1px solid var(--line);width:42px;height:42px;border-radius:12px}
+.hero{position:relative;overflow:hidden;padding:76px 0 110px;background:linear-gradient(145deg,#fffaf5 0%,#f6f1ff 48%,#eef8ff 100%)}.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(2px);opacity:.5}.hero:before{width:330px;height:330px;right:-90px;top:-100px;background:#ffc4db}.hero:after{width:290px;height:290px;left:-80px;bottom:-120px;background:#bde9ff}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center}.kicker{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);padding:6px 12px;border-radius:999px;color:var(--pri);font-size:.82rem;font-weight:800;box-shadow:0 8px 25px #2b1d5810}.kicker i{width:7px;height:7px;border-radius:50%;background:#35c98a;box-shadow:0 0 0 5px #35c98a20}
+h1{font-size:clamp(2.35rem,5vw,4.4rem);line-height:1.25;margin:18px 0 12px;letter-spacing:-1.5px}h1 span{background:linear-gradient(90deg,var(--pri),#a05cff);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:1.08rem;color:var(--mut);max-width:620px;margin:0 0 27px}
+.search{max-width:640px;display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);padding:8px;border-radius:18px;box-shadow:0 18px 40px #33215b12}.search svg{margin:0 6px;width:23px;color:#8c879a}.search input{border:0;outline:0;flex:1;min-width:0;background:transparent;padding:12px 4px}.search button{border:0;border-radius:13px;background:var(--pri);color:#fff;padding:11px 18px;font-weight:800;cursor:pointer}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 13px;cursor:pointer;color:#4d485f}.chip:hover{border-color:var(--pri);color:var(--pri)}
+.hero-art{min-height:340px;position:relative}.orb{position:absolute;border-radius:50%}.orb.one{width:250px;height:250px;right:20px;top:20px;background:linear-gradient(135deg,#dacfff,#fff);box-shadow:inset -25px -25px 60px #ad95ff33}.orb.two{width:120px;height:120px;left:25px;bottom:15px;background:linear-gradient(135deg,#c9f5e2,#fff);box-shadow:0 20px 40px #1e9e7c20}.floating{position:absolute;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:15px 17px}.floating strong{display:block}.floating small{color:var(--mut)}.f1{right:0;top:65px}.f2{left:0;top:175px}.f3{right:65px;bottom:5px}.book-visual{position:absolute;right:75px;top:62px;width:170px;height:225px;border-radius:9px 18px 18px 9px;background:linear-gradient(145deg,#7959ff,#4b35bb);box-shadow:18px 22px 35px #3220713b;transform:rotate(6deg);padding:25px;color:#fff}.book-visual:before{content:"";position:absolute;inset:0;border-left:7px solid #ffffff30;border-radius:9px 18px 18px 9px}.book-visual b{font-size:1.35rem;line-height:1.5;display:block;margin-top:38px}.book-visual small{opacity:.75;display:block;margin-top:18px}
+.stats{position:relative;z-index:5;margin:-38px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.stat{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 18px;box-shadow:0 15px 35px #32215a0b}.stat b{display:block;font-size:1.65rem}.stat span{color:var(--mut);font-size:.83rem}
+section{padding:58px 0 15px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:22px}.eyebrow{color:var(--pri);font-size:.8rem;font-weight:900}.section-head h2{font-size:1.8rem;margin:2px 0}.section-head p{margin:0;color:var(--mut)}
+.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:22px}.tabs{display:flex;gap:7px;flex-wrap:wrap}.tab{border:1px solid var(--line);background:#fff;padding:8px 15px;border-radius:11px;cursor:pointer;font-weight:700;color:#4b465c}.tab.active{background:var(--ink);border-color:var(--ink);color:#fff}.sort{margin-right:auto;border:1px solid var(--line);background:#fff;border-radius:11px;padding:8px 12px;color:#4b465c}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.22s;box-shadow:0 5px 20px #33215a06}.card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.cover{height:230px;position:relative;overflow:hidden;padding:22px;color:#fff;background:var(--c)}.cover:after{content:"";position:absolute;width:190px;height:190px;border-radius:50%;background:#fff2;left:-50px;bottom:-85px}.cover.book{background:linear-gradient(135deg,var(--c),#211b4f)}.cover.article{height:190px;background:linear-gradient(135deg,var(--c),#0b526c)}.cover.info{height:190px;background:linear-gradient(135deg,var(--c),#096b55)}.badge{position:absolute;top:13px;right:13px;background:#fff;color:var(--c);padding:4px 10px;border-radius:999px;font-size:.72rem;font-weight:900;z-index:2}.cover-content{position:absolute;inset:22px;display:flex;flex-direction:column;justify-content:space-between;z-index:2}.cover-line{width:35px;height:3px;border-radius:5px;background:#fff8}.cover-title{font-size:1.3rem;font-weight:900;line-height:1.55;max-width:85%}.cover-author{font-size:.78rem;opacity:.8}
+.card-body{padding:16px 17px}.card-body h3{font-size:1.05rem;margin:0 0 3px}.meta{font-size:.8rem;color:var(--mut)}.card-foot{display:flex;justify-content:space-between;align-items:center;margin-top:16px}.download{border:0;text-decoration:none;background:var(--pri);color:#fff;border-radius:11px;padding:7px 14px;font-weight:800;cursor:pointer}.download:hover{filter:brightness(1.08)}.empty{grid-column:1/-1;padding:45px;text-align:center;background:#fff;border:1px dashed #d7d0e6;border-radius:18px;color:var(--mut)}
+.topics{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.topic{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;cursor:pointer;text-align:right;transition:.2s}.topic:hover{transform:translateY(-3px);border-color:#cfc4ff;box-shadow:var(--shadow)}.topic-icon{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;margin-bottom:12px;background:#f1edff;color:var(--pri)}.topic b{display:block}.topic span{color:var(--mut);font-size:.82rem}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}.panel{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px}.panel h3{margin-top:0}.points{display:grid;gap:12px}.point{display:flex;gap:12px;align-items:flex-start}.check{width:25px;height:25px;flex:0 0 25px;border-radius:8px;background:#e8fbf2;color:#10a875;display:grid;place-items:center;font-weight:900}
+footer{margin-top:70px;background:#17152b;color:#c9c4da;padding:46px 0 20px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:35px}.footer-title{color:#fff;font-weight:900;font-size:1.15rem}.footer-grid p{margin:7px 0;color:#aaa4bd}.footer-grid a{display:block;text-decoration:none;margin:5px 0}.footer-grid a:hover{color:#fff}.copyright{border-top:1px solid #ffffff18;margin-top:30px;padding-top:15px;font-size:.8rem;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.modal{position:fixed;inset:0;background:#0f0d1dcc;display:none;place-items:center;z-index:100;padding:20px}.modal.show{display:grid}.modal-box{width:min(540px,100%);background:#fff;border-radius:24px;padding:26px;box-shadow:0 30px 90px #0006;position:relative}.close{position:absolute;left:18px;top:18px;width:36px;height:36px;border:0;border-radius:10px;background:#f2eff8;cursor:pointer;font-size:1.1rem}.modal-cover{height:150px;border-radius:16px;padding:20px;color:#fff;display:flex;align-items:end;font-weight:900;font-size:1.45rem;margin-bottom:18px}.modal-box p{color:var(--mut)}.modal-actions{display:flex;gap:10px}.modal-actions a,.modal-actions button{border:0;text-decoration:none;padding:10px 17px;border-radius:11px;font-weight:800;cursor:pointer}.primary{background:var(--pri);color:#fff}.secondary{background:#f1eff6;color:var(--ink)}
+.toast{position:fixed;bottom:20px;right:20px;background:#17152b;color:#fff;padding:11px 15px;border-radius:12px;z-index:120;transform:translateY(100px);opacity:0;transition:.25s}.toast.show{transform:none;opacity:1}
+@media(max-width:850px){.hero-grid,.about{grid-template-columns:1fr}.hero-art{display:none}.grid{grid-template-columns:repeat(2,1fr)}.topics{grid-template-columns:1fr 1fr}.navlinks a:not(.nav-cta){display:none}.menu{display:block}.stats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.container{width:min(100% - 22px,1160px)}.nav{height:64px}.hero{padding:55px 0 80px}h1{font-size:2.25rem}.search button{padding:10px 12px}.grid,.topics,.footer-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.stat{padding:12px}.sort{width:100%;margin:0}.section-head{display:block}.section-head p{margin-top:5px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header><div class="container nav">
+<a class="brand" href="#home"><span class="brandmark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 2-2 2z"/><path d="M4 21V5"/></svg></span><span>روان کتاب</span></a>
+<nav class="navlinks"><a href="#library">کتابخانه</a><a href="#topics">موضوعات</a><a href="#about">درباره ما</a><a href="#" onclick="setLang(event)">English</a><a class="nav-cta" href="#library">شروع مطالعه</a></nav>
+<button class="menu" aria-label="منو">☰</button></div></header>
+
+<main id="home">
+<section class="hero"><div class="container hero-grid"><div>
+<div class="kicker"><i></i> کتابخانه‌ای برای یادگیری بهتر</div>
+<h1>روان کتاب؛ <span>دریچه‌ای به دانش</span></h1>
+<p class="lead">کتاب، مقاله و اینفوگرافیک در حوزه روانشناسی، پزشکی ورزشی و موضوعات علمی مرتبط؛ ساده، خوانا و در دسترس.</p>
+<div class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="search" placeholder="جستجو در عنوان، نویسنده یا موضوع…" autocomplete="off"><button onclick="focusLibrary()">جستجو</button></div>
+<div class="chips"><button class="chip" onclick="chooseCat('روانشناسی')">روانشناسی</button><button class="chip" onclick="chooseCat('پزشکی ورزشی')">پزشکی ورزشی</button><button class="chip" onclick="chooseCat('همه')">نمایش همه</button></div>
+</div>
+<div class="hero-art" aria-hidden="true"><div class="orb one"></div><div class="orb two"></div><div class="book-visual"><b>روان<br>کتاب</b><small>دانش · آگاهی · رشد</small></div><div class="floating f1"><strong>مطالعه آسان</strong><small>محتوای منظم و خوانا</small></div><div class="floating f2"><strong>دانلود رایگان</strong><small>برای محتوای منتشرشده</small></div><div class="floating f3"><strong>روانشناسی + علم</strong></div></div>
+</div></section>
+
+<div class="container stats"><div class="stat"><b>3</b><span>کتاب</span></div><div class="stat"><b>2</b><span>مقاله</span></div><div class="stat"><b>1</b><span>اینفوگرافیک</span></div><div class="stat"><b id="resultCount">6</b><span>محتوای موجود</span></div></div>
+
+<section id="library"><div class="container"><div class="section-head"><div><div class="eyebrow">کتابخانه</div><h2>محتوای منتخب</h2></div><p>محتوا را بر اساس نوع یا موضوع پیدا کنید.</p></div>
+<div class="toolbar"><div class="tabs"><button class="tab active" data-type="همه">همه</button><button class="tab" data-type="کتاب">کتاب‌ها</button><button class="tab" data-type="مقاله">مقاله‌ها</button><button class="tab" data-type="اینفوگرافیک">اینفوگرافیک‌ها</button></div><select id="sort" class="sort" aria-label="مرتب‌سازی"><option value="default">مرتب‌سازی پیش‌فرض</option><option value="az">عنوان: الف تا ی</option><option value="za">عنوان: ی تا الف</option></select></div>
+<div id="grid" class="grid"></div></div></section>
+
+<section id="topics"><div class="container"><div class="section-head"><div><div class="eyebrow">کشف کنید</div><h2>موضوعات محبوب</h2></div></div>
+<div class="topics"><button class="topic" onclick="chooseCat('روانشناسی')"><div class="topic-icon">◈</div><b>روانشناسی</b><span>شخصیت، اضطراب، انگیزه و رشد فردی</span></button><button class="topic" onclick="chooseCat('پزشکی ورزشی')"><div class="topic-icon">✦</div><b>پزشکی ورزشی</b><span>تغذیه، تمرین و سلامت ورزشکاران</span></button><button class="topic" onclick="chooseCat('اینفوگرافیک')"><div class="topic-icon">▦</div><b>اینفوگرافیک</b><span>یادگیری سریع با محتوای بصری</span></button></div></div></section>
+
+<section id="about"><div class="container about"><div class="panel"><div class="eyebrow">درباره روان کتاب</div><h2>دانش را ساده‌تر پیدا کنید.</h2><p style="color:var(--mut)">روان کتاب با هدف گردآوری و ارائه محتوای آموزشی در زمینه روانشناسی، پزشکی ورزشی و موضوعات علمی مرتبط طراحی شده است.</p></div><div class="panel"><h3>ویژگی‌های سایت</h3><div class="points"><div class="point"><span class="check">✓</span><span>جستجوی سریع و فیلتر محتوای کتابخانه</span></div><div class="point"><span class="check">✓</span><span>طراحی واکنش‌گرا برای موبایل و دسکتاپ</span></div><div class="point"><span class="check">✓</span><span>ساختار ساده برای توسعه و مدیریت آینده</span></div></div></div></div></section>
+</main>
+
+<footer><div class="container footer-grid"><div><div class="footer-title">روان کتاب</div><p>مرجع دانش، مطالعه و محتوای آموزشی.</p><p>مدیریت و توسعه: اسماعیل سابکزهی</p></div><div><div class="footer-title">دسترسی سریع</div><a href="#library">کتابخانه</a><a href="#topics">موضوعات</a><a href="#about">درباره ما</a></div><div><div class="footer-title">ارتباط</div><a href="mailto:info@ravanketab.ir">info@ravanketab.ir</a><a href="#home">بازگشت به بالا ↑</a></div></div><div class="container copyright"><span>© روان کتاب</span><span>ساخته‌شده برای تجربه مطالعه بهتر</span></div></footer>
+
+<div id="modal" class="modal" role="dialog" aria-modal="true"><div class="modal-box"><button class="close" onclick="closeModal()" aria-label="بستن">×</button><div id="modalCover" class="modal-cover"></div><div class="eyebrow" id="modalType"></div><h2 id="modalTitle"></h2><p id="modalMeta"></p><p>این صفحه برای اتصال فایل واقعی محتوا آماده است. در نسخه مدیریت، کافی است PDF یا فایل مربوط به هر اثر را به آن متصل کنید.</p><div class="modal-actions"><button class="primary" onclick="fakeDownload()">دانلود محتوا</button><button class="secondary" onclick="closeModal()">بستن</button></div></div></div>
+<div id="toast" class="toast"></div>
+
+<script>
+const DATA = [{"type": "کتاب", "title": "مبانی روانشناسی شخصیت", "author": "دکتر نمونه", "cat": "روانشناسی", "color": "#6d4aff", "shape": "book"}, {"type": "کتاب", "title": "پزشکی ورزشی کاربردی", "author": "تیم تحریریه", "cat": "پزشکی ورزشی", "color": "#4f7cff", "shape": "book"}, {"type": "مقاله", "title": "اضطراب و راهبردهای مقابله", "author": "نمونه", "cat": "روانشناسی", "color": "#08a88a", "shape": "article"}, {"type": "اینفوگرافیک", "title": "چرخه استرس", "author": "روان کتاب", "cat": "روانشناسی", "color": "#e68a24", "shape": "info"}, {"type": "کتاب", "title": "ذهن و انگیزه", "author": "اسماعیل سابکزهی", "cat": "روانشناسی", "color": "#8b5cf6", "shape": "book"}, {"type": "مقاله", "title": "تغذیه ورزشکار", "author": "نمونه", "cat": "پزشکی ورزشی", "color": "#1793c6", "shape": "article"}];
+let activeType='همه', activeCat='همه', CURRENT=[];
+const grid=document.getElementById('grid'), search=document.getElementById('search'), sort=document.getElementById('sort');
+
+function render(){
+  const q=search.value.trim().toLowerCase();
+  let items=DATA.filter(x=>(activeType==='همه'||x.type===activeType)&&(activeCat==='همه'||x.cat===activeCat)&&(!q||[x.title,x.author,x.cat,x.type].join(' ').toLowerCase().includes(q)));
+  if(sort.value==='az') items.sort((a,b)=>a.title.localeCompare(b.title,'fa'));
+  if(sort.value==='za') items.sort((a,b)=>b.title.localeCompare(a.title,'fa'));
+  CURRENT=items;
+  document.getElementById('resultCount').textContent=items.length;
+  grid.innerHTML=items.length?items.map((x,i)=>`<article class="card"><div class="cover ${x.shape}" style="--c:${x.color}"><span class="badge">${x.type}</span><div class="cover-content"><span class="cover-line"></span><div class="cover-title">${x.title}</div><div class="cover-author">${x.author}</div></div></div><div class="card-body"><h3>${x.title}</h3><div class="meta">${x.author} · ${x.cat}</div><div class="card-foot"><button class="download" onclick="openModal(${i})">مشاهده</button><span class="meta">رایگان</span></div></div></article>`).join(''):`<div class="empty">محتوایی با این مشخصات پیدا نشد.<br><small>عبارت جستجو یا فیلتر را تغییر دهید.</small></div>`;
+}
+function openModal(i){const x=CURRENT[i];if(!x)return;document.getElementById('modalCover').style.background=`linear-gradient(135deg,${x.color},#17152b)`;document.getElementById('modalCover').textContent=x.title;document.getElementById('modalType').textContent=x.type;document.getElementById('modalTitle').textContent=x.title;document.getElementById('modalMeta').textContent=`${x.author} · ${x.cat}`;document.getElementById('modal').classList.add('show')}
+function closeModal(){document.getElementById('modal').classList.remove('show')}
+function fakeDownload(){showToast('برای دانلود واقعی، فایل PDF این محتوا را در بخش مدیریت به آن متصل کنید.')}
+function showToast(t){const el=document.getElementById('toast');el.textContent=t;el.classList.add('show');clearTimeout(window.tt);window.tt=setTimeout(()=>el.classList.remove('show'),3300)}
+function chooseCat(cat){activeCat=cat;activeType='همه';document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.type==='همه'));document.getElementById('library').scrollIntoView({behavior:'smooth'});render()}
+function focusLibrary(){document.getElementById('library').scrollIntoView({behavior:'smooth'});search.focus();render()}
+function setLang(e){e.preventDefault();showToast('نسخه انگلیسی در ساختار سایت پیش‌بینی شده است.')}
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{activeType=b.dataset.type;activeCat='همه';document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');render()}));
+search.addEventListener('input',render);sort.addEventListener('change',render);
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+render();
+</script>
+</body></html>
